@@ -3,7 +3,7 @@ public class Exercicio02 {
 
 	public static void main(String[] args) {
 		//Exercicio 02
-	    System.out.println("\n\n\nSolucao para exercicio 02");
+	    System.out.println("Solucao para exercicio 02");
 	    System.out.println("------------------------------");
 	    
 	    Aeroporto aeroporto = new Aeroporto("Barra Funda");

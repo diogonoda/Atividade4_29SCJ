@@ -34,7 +34,7 @@ public class Exercicio01 {
 			@Override
 			public void run() {
 				while(true){
-					System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yy HH:mm:ss")));
+					System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss")));
 					
 					try {
 						Thread.sleep(10_000);

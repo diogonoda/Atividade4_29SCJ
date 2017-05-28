@@ -5,13 +5,17 @@ public class Aeroporto extends Thread {
    	public Aeroporto(String nomeAeroporto){
    		this.nomeAeroporto = nomeAeroporto;
    	}
-    	
+    
+   	public boolean getPistaDisponivel(){
+   		return this.pistaDisponivel;
+   	}
+   	
    	public synchronized void aguardarPistaDisponivel(){
-   		try{
-   			wait();
-   		}catch(InterruptedException e){
-   			e.printStackTrace();
-   		}
+   		try {
+			wait();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
    	}
     	
    	public synchronized void alterarEstadoPista(){

@@ -31,10 +31,10 @@ public class Aviao extends Thread {
    	@Override
    	public void run() {
    		aeroporto.aguardarPistaDisponivel();
-   		decolar();
+		decolar();
    		voar();
     		
    		aeroporto.aguardarPistaDisponivel();
-   		aterrissar();
+		aterrissar();
    	}
 }
